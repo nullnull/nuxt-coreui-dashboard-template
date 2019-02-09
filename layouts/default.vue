@@ -10,20 +10,18 @@
         </div>
       </main>
     </div>
-    <AppFooter/>
   </div>
 </template>
 
 <script>
 import nav from './menu'
-import { Header as AppHeader, Sidebar, Footer as AppFooter, Breadcrumb } from '~/components/'
+import { Header as AppHeader, Sidebar, Breadcrumb } from '~/components/'
 
 export default {
   name: 'full',
   components: {
     AppHeader,
     Sidebar,
-    AppFooter,
     Breadcrumb
   },
   data () {
