@@ -8,10 +8,6 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <b-navbar-nav class="ml-auto">
-      <b-nav-item class="d-md-down-none">
-        <i class="icon-bell"></i>
-        <b-badge pill variant="danger">5</b-badge>
-      </b-nav-item>
       <HeaderDropdown/>
     </b-navbar-nav>
   </header>
