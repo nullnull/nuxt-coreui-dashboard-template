@@ -3,7 +3,7 @@
     .animated.fadeIn
       b-row
         b-col(lg='12')
-          Table(:items="$store.state.categories", :fields="fields" caption="<i class='fa fa-align-justify'></i> Categories")
+          Table(:items="$store.state.categories.list", :fields="fields" caption="<i class='fa fa-align-justify'></i> Categories")
 </template>
 
 <script>
@@ -14,7 +14,7 @@
     name: 'tables',
     components: {Table},
     async fetch ({ store, params }) {
-      await store.dispatch('getCategories');
+      await store.dispatch('categories/get');
     },
     data () {
       return {
