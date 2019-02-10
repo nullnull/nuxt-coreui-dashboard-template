@@ -1,49 +1,31 @@
-![Nuxt CoreUI Project](nuxtcoreui.jpg)
+# NuxtJS + CoreUI boilerplate
+[![Image from Gyazo](https://i.gyazo.com/3a796ac6cbd8d63f26674f2d0a7482d2.png)](https://gyazo.com/3a796ac6cbd8d63f26674f2d0a7482d2)
 
-# NuxtJS + CoreUI
+Minimal boilerplate for Nuxt.js + CoreUI to develop dashboard, originally created by using [nuxt-coreui](https://github.com/nullnull/nuxt-coreui).
 
-Unofficial Nuxt + CoreUI project, free to use boilerplate for every need. For more information about Vue CoreUI you can see at [Official Vue CoreUI](https://github.com/mrholek/CoreUI-Vue).
+If you want to see what kind of components are prepared, it will help you to visit [Official Live Demo](https://coreui.io/demo/#main.html) and you can see sources on [nuxt-coreui](https://github.com/nullnull/nuxt-coreui).
+
+## Difference
+* Using spa mode
+* Using pug
 
 ## Usage
+Simply clone this repository.
 
-If you want to use this boilerplate, make sure you already installed [NodeJS](https://nodejs.org/en/) and [Vue CLI](https://www.npmjs.com/package/vue-cli) on your local machine. And then, you can use below command to download this boilerplate.
-
-``` bash
-$ vue init muhibbudins/nuxt-coreui my-project  
-$ cd my-project
-
-# install dependencies
-$ npm install # Or yarn install
+```sh
+$ git clone git@github.com:nullnull/nuxt-coreui-dashboard-template.git
+$ cd nuxt-coreui-dashboard-template
+$ yarn install
 ```
 
-> Make sure to use a version of vue-cli >= 2.1 (`vue -V`).
-
 ### Development
-
-``` bash
-# serve with hot reloading at localhost:3000
-$ npm run dev # Or yarn dev
+```sh
+$ yarn dev
 ```
 
 Go to [http://localhost:3000](http://localhost:3000)
 
 ### Production
-
-``` bash
-# build for production and launch the server
-$ npm run build
-$ npm start
+```sh
+$ yarn generate
 ```
-
-## Todo
-
-- [x] Fix link and views
-- [x] Updgrade to latest NuxtJS boilerplate
-- [x] Using Express as server
-- [x] Move installation to Vue CLI
-- [x] Extend SCSS to Style Resources
-- [x] Improve performance and code style
-
-## License
-
-This project under [NuxtJS License](https://github.com/nuxt/nuxt.js/blob/dev/LICENSE) and [CoreUI License](https://github.com/coreui/coreui-free-vue-admin-template/blob/master/LICENSE)
