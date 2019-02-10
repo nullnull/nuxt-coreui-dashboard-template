@@ -1,10 +1,10 @@
 <template>
   <div class="app">
-    <AppHeader/>
+    <Header/>
     <div class="app-body">
       <Sidebar :navItems="nav"/>
       <main class="main">
-        <breadcrumb :list="list"/>
+        <Breadcrumb :list="list"/>
         <div class="container-fluid">
           <nuxt />
         </div>
@@ -15,12 +15,14 @@
 
 <script>
 import nav from './menu'
-import { Header as AppHeader, Sidebar, Breadcrumb } from '~/components/'
+import Header from '~/components/Header/Header'
+import Sidebar from '~/components/Sidebar/Sidebar'
+import Breadcrumb from '~/components/Breadcrumb'
 
 export default {
   name: 'full',
   components: {
-    AppHeader,
+    Header,
     Sidebar,
     Breadcrumb
   },
