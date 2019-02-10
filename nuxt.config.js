@@ -11,6 +11,8 @@ const changeLoaderOptions = loaders => {
 }
 
 module.exports = {
+  mode: 'spa',
+
   /*
   ** Headers of the page
   */
@@ -51,7 +53,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    
+
   ],
 
   /*
@@ -96,7 +98,7 @@ module.exports = {
         const vueLoader = config.module.rules.find(
           ({loader}) => loader === 'vue-loader')
         const { options: {loaders} } = vueLoader || { options: {} }
-        
+
         if (loaders) {
           for (const loader of Object.values(loaders)) {
             changeLoaderOptions(Array.isArray(loader) ? loader : [loader])
