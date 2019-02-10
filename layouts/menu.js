@@ -16,7 +16,7 @@ export default {
     },
     {
       name: 'Sample',
-      url: '/theme/colors',
+      url: '/sample',
       icon: 'icon-drop'
     },
     {
@@ -35,7 +35,7 @@ export default {
       children: [
         {
           name: 'Breadcrumbs',
-          url: '/base/breadcrumbs',
+          url: '/sample2',
           icon: 'icon-puzzle'
         },
       ]
