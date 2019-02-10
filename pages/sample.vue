@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="animated fadeIn">
 
     <b-row>
@@ -27,7 +28,7 @@
       </b-col>
     </b-row>
   </div>
-
+</div>
 </template>
 
 <script>
