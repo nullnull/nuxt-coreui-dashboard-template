@@ -15,8 +15,8 @@ export default {
       }
     },
     {
-      name: 'Sample',
-      url: '/sample',
+      name: 'Categories',
+      url: '/categories',
       icon: 'icon-drop'
     },
     {
