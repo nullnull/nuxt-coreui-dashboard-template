@@ -1,10 +1,5 @@
-<template>
-<div>
-  <div class="animated fadeIn">
-    Dashboard
-  </div>
-</div>
+<template lang="pug">
+  div
+    .animated.fadeIn
+      | Dashboard
 </template>
-
-<script>
-</script>

@@ -6,28 +6,36 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "dev-prettier": "concurrently -k 'nuxt' 'onchange '**/*.js' '**/*.vue' '**/*.scss' -- prettier --write {{changed}}'",
     "build": "nuxt build",
     "start": "nuxt start",
+    "prettier-watch": "onchange '**/*.js' '**/*.vue' '**/*.scss' -- prettier --write {{changed}}",
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/style-resources": "^0.1.1",
     "bootstrap-vue": "^2.0.0-rc.1",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
     "flag-icon-css": "^2.9.0",
     "font-awesome": "^4.7.0",
+    "nuxt": "^2.0.0",
+    "onchange": "^5.2.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
     "simple-line-icons": "^2.4.1"
   },
   "devDependencies": {
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
-    "nodemon": "^1.11.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.11.0",
+    "prettier": "^1.16.4",
+    "sass-loader": "^6.0.6",
+    "sass-resources-loader": "^2.0.0"
   }
 }
