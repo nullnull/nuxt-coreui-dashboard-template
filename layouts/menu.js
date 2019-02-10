@@ -34,8 +34,8 @@ export default {
       icon: 'icon-puzzle',
       children: [
         {
-          name: 'Breadcrumbs',
-          url: '/sample2',
+          name: 'Items',
+          url: '/items',
           icon: 'icon-puzzle'
         },
       ]
