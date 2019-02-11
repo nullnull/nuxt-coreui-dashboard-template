@@ -4,8 +4,8 @@
       b-card
         div(slot='header')
           strong Edit Item
-        b-form-group(label='Product Name', label-for='name', :label-cols='3', :horizontal='true')
-          b-form-input#name(plaintext='', type='text', :value='item.productName')
+        b-form-group(label='Id', label-for='id', :label-cols='3', :horizontal='true')
+          b-form-input#id(plaintext='', type='text', :value='item.id')
         b-form-group(label='Condition', label-for='condition', description='', :label-cols='3', :horizontal='true')
           b-form-input#condition(type='text', placeholder='N' v-model='item.condition')
         div(slot='footer')
