@@ -28,7 +28,7 @@
     methods: {
       async logout() {
         try {
-          this.$store.dispatch('logout').then(() => {
+          this.$store.dispatch('session/logout').then(() => {
             this.$router.push('/login')
           })
         } catch (e) {
@@ -38,4 +38,3 @@
     }
   }
 </script>
-
