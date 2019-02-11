@@ -15,19 +15,26 @@
 </template>
 
 <script>
-  export default {
-    computed: {
-      item() {
-        return this.$store.state.items.current || {}
-      },
-    },
-    async fetch ({ store, query }) {
-      await store.dispatch('items/get', query.id);
-    },
-    methods: {
-      async submit() {
-        const response = await this.$store.dispatch('items/update');
+import UIkit from 'uikit'
+
+export default {
+  computed: {
+    item() {
+      return this.$store.state.items.current || {}
+    }
+  },
+  async fetch({ store, query }) {
+    await store.dispatch('items/get', query.id)
+  },
+  methods: {
+    async submit() {
+      const response = await this.$store.dispatch('items/update')
+      if (response.status == 200) {
+        UIkit.notification('Success!!', { status: 'primary' })
+      } else {
+        UIkit.notification('Failure!!', { status: 'danger' })
       }
     }
   }
+}
 </script>
