@@ -24,7 +24,8 @@
     "onchange": "^5.2.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "simple-line-icons": "^2.4.1"
+    "simple-line-icons": "^2.4.1",
+    "uikit": "^3.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

@@ -1,5 +1,5 @@
 # NuxtJS + CoreUI boilerplate
-[![Image from Gyazo](https://i.gyazo.com/3a796ac6cbd8d63f26674f2d0a7482d2.png)](https://gyazo.com/3a796ac6cbd8d63f26674f2d0a7482d2)
+[![Image from Gyazo](https://i.gyazo.com/c749b67e67edcdd56437f3e61ae6b193.png)](https://gyazo.com/c749b67e67edcdd56437f3e61ae6b193)
 
 Minimal boilerplate for Nuxt.js + CoreUI to develop dashboard, originally created by using [nuxt-coreui](https://github.com/nullnull/nuxt-coreui).
 

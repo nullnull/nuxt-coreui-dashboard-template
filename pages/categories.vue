@@ -7,7 +7,6 @@
 </template>
 
 <script>
-  import axios from 'axios'
   import Table from './../components/table.vue'
 
   export default {
