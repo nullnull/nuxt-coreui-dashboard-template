@@ -10,6 +10,7 @@
   import Table from './../components/table.vue'
 
   export default {
+    middleware: 'authenticated',
     name: 'tables',
     components: {Table},
     async fetch ({ store, params }) {

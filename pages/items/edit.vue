@@ -18,6 +18,7 @@
 import UIkit from 'uikit'
 
 export default {
+  middleware: 'authenticated',
   computed: {
     item() {
       return this.$store.state.items.current || {}
