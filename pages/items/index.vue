@@ -7,14 +7,13 @@
 </template>
 
 <script>
-  import axios from 'axios'
-  import Table from './../components/table.vue'
+  import Table from '~/components/table.vue'
 
   export default {
     name: 'tables',
     components: {Table},
     async fetch ({ store, params }) {
-      await store.dispatch('items/get');
+      await store.dispatch('items/getList');
     },
     data () {
       return {
@@ -23,6 +22,7 @@
           {key: 'mainCategoryName'},
           {key: 'productName'},
           {key: 'grade'},
+          {key: 'edit'},
         ],
       }
     },
