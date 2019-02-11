@@ -20,6 +20,11 @@ export default {
       icon: 'icon-drop'
     },
     {
+      name: 'Items',
+      url: '/items',
+      icon: 'icon-puzzle'
+    },
+    {
       title: true,
       name: 'Fuga',
       class: '',

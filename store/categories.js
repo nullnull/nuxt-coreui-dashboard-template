@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+export const strict = false
+
 export const state = () => ({
   list: [],
   shouldFetch: true

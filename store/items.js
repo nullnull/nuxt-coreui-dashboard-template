@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+export const strict = false
+
 export const state = () => ({
   list: [],
   current: null,
@@ -13,7 +15,7 @@ export const mutations = {
   },
   set(state, data) {
     state.current = data
-  }
+  },
 }
 
 export const actions = {
@@ -30,6 +32,14 @@ export const actions = {
       const { data } = await axios.get('http://0.0.0.0:3000/api/items/' + id)
       commit('set', data)
     }
-
   },
+  async update ({ commit, state }) {
+    if (!state.current) {
+      return
+    }
+    const response = await axios.put('http://0.0.0.0:3000/api/items/' + state.current.id, {
+      condition: state.current.condition,
+    })
+    return response
+  }
 }
