@@ -54,6 +54,7 @@ module.exports = {
   */
   plugins: [
     { src: '@/plugins/uikit' },
+    { src: '@/plugins/nuxt-client-init.js' },
   ],
 
   /*

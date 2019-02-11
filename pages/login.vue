@@ -18,7 +18,7 @@
                 </b-input-group>
                 <b-row>
                   <b-col cols="6">
-                    <b-button variant="primary" class="px-4">Login</b-button>
+                    <b-button variant="primary" @click="login" class="px-4">Login</b-button>
                   </b-col>
                   <b-col cols="6" class="text-right">
                     <b-button variant="link" class="px-0">Forgot password?</b-button>
@@ -45,6 +45,21 @@
 <script>
 export default {
   name: 'Login',
-  layout: 'clean'
+  layout: 'clean',
+  fetch({ store, app }) {
+    if (store.state.session.authenticated) {
+      app.router.push('/')
+    }
+  },
+  methods: {
+    login() {
+      const response = this.$store.dispatch('session/login')
+      if (this.$store.state.session.authenticated) {
+        this.$router.push('/');
+      } else {
+        // TODO error message
+      }
+    }
+  }
 }
 </script>
